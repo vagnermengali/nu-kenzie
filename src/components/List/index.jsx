@@ -26,7 +26,7 @@ function List({listTransactions,setlistTransactions}) {
                 <button onClick={() => filterAll("Despesa")}>Despesas</button>
             </nav>
         </div>
-        <ul>
+        <ul className="ulList">
             {listTransactions.length > 0 ? 
                 <>
                 {listTransactions.map((elem,index) => {
@@ -41,10 +41,10 @@ function List({listTransactions,setlistTransactions}) {
                 )}
                 </>
             :
-            <li>
+                <>
                 <h1 className="titleNoCard" >Você ainda não possui nenhum lançamento</h1>
-                <img className="imgNoCard" src={NoCard} alt=""/>    
-            </li>  
+                <img className="imgNoCard" src={NoCard} alt=""/>  
+                </>
             }
         </ul>
     </section>

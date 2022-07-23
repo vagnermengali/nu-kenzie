@@ -1,6 +1,8 @@
 import { useState } from "react";
 import TotalMoney from "../TotalMoney"
 
+import "./style.css"
+
 
 function Form({listTransactions, setlistTransactions}) {
     const [listDescription, setlistDescription] = useState("");
@@ -32,7 +34,7 @@ function Form({listTransactions, setlistTransactions}) {
                     <p>Ex: Compra de roupas</p>
                 </div>
                 <div className="divValue">
-                    <div className="divContent">
+                    <div className="divContentOne">
                         <label className="labelValue" >Valor</label>
                         <input 
                         className="inputValue" 
@@ -42,12 +44,13 @@ function Form({listTransactions, setlistTransactions}) {
                         onChange={(event) => setlistValue(event.target.value)}
                         /> 
                     </div>
-                    <div className="divContent">
+                    <div className="divContentTwo">
                     <label >Tipo de valor</label>
                     <select name="typeValue" id="typeValue" value={listStatus} onChange={(event) => setlistStatus(event.target.value)}>
                         <option >Selecione</option>
                         <option value="Entrada">Entrada</option>
                         <option value="Despesa">Saída</option>
+                    
                     </select>
                     </div>
                 </div>
