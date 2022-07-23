@@ -76,3 +76,63 @@
     border: 0.1vw solid var(--color-primary-2);
 }
 
+@media only screen and (max-width:950px){
+    .content {
+        width: 85%;
+    }
+    .rightLogin {
+        width: 45%;
+    }
+    .leftLogin h1{
+        font-size: 2vw;
+    }
+    .leftLogin h2{
+        font-size: 3vw;
+    }
+    .leftLogin p{
+        font-size: 1.9vw;
+    }
+    .leftLogin button{
+        width: 65%;
+        font-size: 2vw;
+    }
+}
+@media only screen and (max-width:600px){
+    .content {
+        width: 90%;
+    }
+    .rightLogin {
+        display: none;
+    }
+    .leftLogin {
+        animation: none;
+        width: 90%;
+    }
+    .leftLogin h1{
+        animation: fadeInDown;
+        animation-duration: 1.5s;
+        font-size: 8.6vw;
+        padding: 4% 0 6% 0;
+    }
+    .leftLogin h2{
+        animation: fadeInLeft;
+        animation-duration: 1.5s;
+        width: 80%;
+        font-size: 6.4vw;
+        padding: 4% 0 6% 0;
+    }
+    .leftLogin p{
+        animation: fadeInRight;
+        animation-duration: 1.5s;
+        font-size: 4.9vw;
+        padding: 4% 0 10% 0 ;
+    }
+    .leftLogin button{
+        animation: fadeInUp;
+        animation-duration: 1.5s;
+        padding: 5.5% ;
+        width:100%;
+        border-radius: 1.5vw;
+        font-size: 5.1vw;
+    }
+}
