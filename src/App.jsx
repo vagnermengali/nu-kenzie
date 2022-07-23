@@ -2,12 +2,14 @@ import Interface from './components/Interface/';
 import Header from './components/Header';
 import Form from './components/Form';
 import List from './components/List';
+import Homepage from './components/Homepage';
 import { useState } from 'react';
 import './App.css';
 
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false)
+
   const [listTransactions, setlistTransactions] = useState([
     { description: "Salário recebido", type: "Entrada", value: 2500 },
     { description: "Conta de luz", type: "Despesa", value: 150 }
