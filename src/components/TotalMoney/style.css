@@ -1,0 +1,33 @@
+.containerValue {
+    width: 100%;
+    background: var(--white);
+    border: 1px solid var(--grey-2);
+    border-radius: 4px;
+    margin-top: 5%;
+}
+.contentValue {
+    padding: 6% 7%;
+    display: flex;
+    flex-direction:column;
+}
+.containerValue p {
+    font-weight: 400;
+    font-size: 0.8vw;
+    color: var(--grey-4);
+}
+.valueTotal {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    margin-bottom: 5%;
+}
+.valueTotal h1 {
+    font-weight: 700;
+    font-size: 1vw;
+    color: var(--grey-4);
+}
+.valueTotal h2 {
+    font-weight: 700;
+    font-size: 1vw;
+    color: var(--color-primary);
+}

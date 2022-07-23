@@ -1,0 +1,58 @@
+.list {
+   width: 60%;
+}
+.headerList {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 0 0 2.5%  0 ;
+}
+.headerList div{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: row;
+}
+.headerList div p{
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.05vw;
+    color: var(--grey-4);
+}
+.headerList nav{
+    width: 76%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    gap: 5%;
+}
+.headerList nav button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5.7vw;
+    height: 5.1vh;
+    background: var(--grey-2);
+    border: 0.1vw solid var(--grey-2);
+    border-radius: 0.5vw;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1vw;
+    text-align: center;
+    color: var(--grey-4);
+    cursor: pointer;
+} 
+.headerList nav button:hover {
+    background:var(--color-primary);
+    border: 0.1vw solid var(--color-primary);
+    color: var(--white);
+}
+.headerList nav button:focus {
+    background:var(--color-primary);
+    border: 0.1vw solid var(--color-primary);
+    color: var(--white);
+}

@@ -1,15 +1,15 @@
 import { useState } from "react";
 import TotalMoney from "../TotalMoney"
-import "./style.css"
+
 
 function Form({listTransactions, setlistTransactions}) {
     const [listDescription, setlistDescription] = useState("");
     const [listValue, setlistValue] = useState("");
     const [listStatus, setlistStatus] = useState("");
     function createCard() {
-        return {
-            price: listValue,
+        return { 
             description: listDescription,
+            value: Number(listValue),
             type: listStatus
         }
     }
@@ -34,7 +34,8 @@ function Form({listTransactions, setlistTransactions}) {
                 <div className="divValue">
                     <div className="divContent">
                         <label className="labelValue" >Valor</label>
-                        <input className="inputValue" 
+                        <input 
+                        className="inputValue" 
                         type="number" 
                         placeholder="R$" 
                         value={listValue}
@@ -44,8 +45,9 @@ function Form({listTransactions, setlistTransactions}) {
                     <div className="divContent">
                     <label >Tipo de valor</label>
                     <select name="typeValue" id="typeValue" value={listStatus} onChange={(event) => setlistStatus(event.target.value)}>
-                        <option value="entrada">Entrada</option>
-                        <option value="saída">Saída</option>
+                        <option >Selecione</option>
+                        <option value="Entrada">Entrada</option>
+                        <option value="Despesa">Saída</option>
                     </select>
                     </div>
                 </div>
@@ -54,7 +56,8 @@ function Form({listTransactions, setlistTransactions}) {
                 addList()
             }}>Inserir Valor</button>
             </form>
-                <TotalMoney />
+            {listTransactions.length > 0}
+                <TotalMoney listTransactions={listTransactions}/>
         </section>
     )
 }
