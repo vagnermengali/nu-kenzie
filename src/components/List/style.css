@@ -1,6 +1,21 @@
 .list {
    width: 60%;
 }
+.ulList {
+    overflow-y: scroll;
+    height: 67vh;
+}
+.ulList::-webkit-scrollbar {
+    width: 12px;       
+}
+.ulList::-webkit-scrollbar-track {
+    background: var(--white);     
+}
+.ulList::-webkit-scrollbar-thumb {
+    background-color: var(--grey-2);  
+    border-radius: 0.5vw;      
+    border: 1px solid var(--grey-2);  
+}
 .headerList {
     min-width: 100%;
     display: flex;
@@ -47,8 +62,8 @@
     cursor: pointer;
 } 
 .headerList nav button:hover {
-    background:var(--color-primary);
-    border: 0.1vw solid var(--color-primary);
+    background:var(--grey-4);
+    border: 0.1vw solid var(--grey-4);
     color: var(--white);
 }
 .headerList nav button:focus {
