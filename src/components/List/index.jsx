@@ -1,5 +1,6 @@
 import { useState } from "react"
 import Card from "./Card"
+import Button from "./Card/Button"
 import NoCard from "../../assets/NoCard.svg"
 import "./style.css"
 
@@ -21,10 +22,9 @@ function List({listTransactions,setlistTransactions}) {
                 <p>Resumo financeiro</p>
             </div>
             <nav >
-                <button onClick={() => filterAll("Todos")}>Todos</button>
-                <button onClick={() => filterAll("Entrada")}>Entradas</button>
-                <button onClick={() => filterAll("Despesa")}>Despesas</button>
+                <Button filtered={filtered} filterAll={filterAll}/>
             </nav>
+            
         </div>
         <ul className="ulList">
             {listTransactions.length > 0 ? 
