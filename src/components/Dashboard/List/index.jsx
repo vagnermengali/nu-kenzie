@@ -1,7 +1,7 @@
 import { useState } from "react"
 import Card from "./Card"
 import Button from "./Card/Button"
-import NoCard from "../../assets/NoCard.svg"
+import NoCard from "../../../assets/NoCard.svg"
 import "./style.css"
 
 function List({listTransactions,setlistTransactions}) {
