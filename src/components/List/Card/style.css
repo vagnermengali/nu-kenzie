@@ -94,3 +94,77 @@
     color: var(--grey-1);
     cursor: pointer;
 }
+@media only screen and (max-width:950px){
+    .titleNoCard {
+        font-size: 1.75vw;
+    }
+    .cardExit {
+        height: 4.8vw;
+    }
+    .cardExit p{
+        font-size: 1.1vw;
+    }
+    .cardEnter {
+        height: 4.8vw;
+    }
+    .cardEnter p{
+        font-size: 1.1vw;
+    }
+    .cardTitle p{
+        font-weight: 700;
+        font-size: 1vw;
+        color: var(--grey-4);
+    }
+    .cardTitle h1{
+        font-size: 1.5vw;
+    }
+    .cardPrice p{
+        font-size: 1.1vw;
+    }
+    .cardPrice button{
+        width: 2.6vw;
+        height: 2.6vw;
+    }
+}
+@media only screen and (max-width:600px){
+.titleNoCard {
+    font-size: 3.45vw;
+}
+.cardExit {
+    border-radius: 0.8vw;
+    height: 8.3vw;
+}
+.cardExit:hover{
+    border-radius: 0.8vw;
+}
+.cardExit p{
+    font-size: 2.9vw;
+}
+.cardEnter {
+    border-radius: 0.8vw;
+    height: 8.3vw;
+}
+.cardEnter:hover{
+    border-radius: 0.8vw;
+}
+.cardEnter p{
+    font-size: 2.9vw;
+}
+.cardContainer {
+    margin-bottom: -1vw;
+}
+.cardTitle p{
+    font-size: 3vw;
+}
+.cardTitle h1{
+    font-size: 3.3vw;
+}
+.cardPrice p{
+    font-size: 2.7vw;
+}
+.cardPrice button{
+    width: 6vw;
+    height: 4vh;
+    border-radius: 0.8vw;
+}
+}

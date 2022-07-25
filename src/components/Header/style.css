@@ -55,3 +55,30 @@
     border: 1.4px solid var(--grey-4);
     color: var(--white);
 }
+@media only screen and (max-width:950px){
+    .headerContent div h1 {
+        font-size: 2vw;
+        padding-right: 13vw;
+    }
+    .btnContent button {
+        width: 6vw;
+        height: 3vw;
+        font-size: 1.5vw;
+    }
+}
+@media only screen and (max-width:600px){
+    .headerContainer{
+        height: 10vw;
+        justify-content: space-between;
+    }
+    .headerContent div h1 {
+        font-size: 4.7vw;
+        padding-right: 35vw;
+    }
+    .btnContent button {
+        width: 13.3vw;
+        height: 6vw;
+        border-radius: 0.5vw;
+        font-size: 3vw;
+    }
+}

@@ -132,3 +132,95 @@ input[type="number"] {
     background: var(--color-primary-2);
     border: 0.1vw solid var(--color-primary-2);
 }
+@media only screen and (max-width:950px){
+    .divDescription p{
+        font-size: 1.1vw;
+    }
+    .labelDescription {
+        font-size: 1.1vw;
+    }
+    .inputDescription {
+        font-size: 1.3vw;
+    }
+    .divContentOne label {
+        font-size: 1.1vw;
+    }
+    .divContentTwo label {
+        font-size: 1.1vw;
+    }
+    .divContentTwo select {
+        font-size: 1.3vw;
+    }
+    .inputValue {
+        font-size: 1.3vw;
+    }
+    .inputValue::placeholder {
+        padding-left: 75%;
+    }
+    .insertValue {
+        font-size: 1.2vw;
+    }
+}
+@media only screen and (max-width:600px){
+.containerForm {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+}
+.form {
+    width: 100%;
+    border: 0.1vw solid var(--grey-2);
+    border-radius: 0.5%;
+    padding: 8% 6%;
+}
+.divDescription p{
+    font-size: 2.8vw;
+    margin-bottom: 6%;
+}
+.divDescription {
+    width: 100%;
+}
+.labelDescription {
+    font-size: 2.8vw;
+    margin-bottom: 6%;
+}
+.inputDescription {
+    font-size: 3.1vw;
+    padding: 5%;
+}
+.divValue {
+    width: 100%;
+}
+.divContentOne {
+   width: 45%; 
+   margin-bottom: 6%;
+}
+.divContentTwo {
+    width: 45%; 
+    margin-bottom: 6%;
+ }
+.divContentOne label {
+    width: 100%;
+    font-size: 2.8vw;
+    margin-bottom: 8%;
+}
+.divContentTwo label {
+    font-size: 2.8vw;
+}
+.divContentTwo select {
+    font-size: 3.1vw;
+    padding: 10%;
+}
+.inputValue {
+    font-size: 3.1vw;
+    padding: 10%;
+}
+.insertValue {
+    font-size: 3vw;
+    height: 19%;
+    border-radius: 0.8vw;
+}
+.insertValue:hover{
+    border: 0.1vw solid var(--color-primary-2);
+}
+}

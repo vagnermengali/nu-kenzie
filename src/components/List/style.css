@@ -3,6 +3,7 @@
 }
 .ulList {
     overflow-y: scroll;
+    
     height: 67vh;
 }
 .ulList::-webkit-scrollbar {
@@ -45,29 +46,37 @@
     flex-direction: row;
     gap: 5%;
 }
-.headerList nav button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 5.7vw;
-    height: 5.1vh;
-    background: var(--grey-2);
-    border: 0.1vw solid var(--grey-2);
-    border-radius: 0.5vw;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 1vw;
-    text-align: center;
-    color: var(--grey-4);
-    cursor: pointer;
-} 
-.headerList nav button:hover {
-    background:var(--grey-4);
-    border: 0.1vw solid var(--grey-4);
-    color: var(--white);
+
+@media only screen and (max-width:950px){
+     .ulList::-webkit-scrollbar {
+         width: 0.1vw;       
+     }
+     .headerList div p{
+         font-size: 1.35vw;
+     }
+     .headerList nav{
+         width: 70%;
+         gap: 2.5%;
+     }
+
 }
-.headerList nav button:focus {
-    background:var(--color-primary);
-    border: 0.1vw solid var(--color-primary);
-    color: var(--white);
+@media only screen and (max-width:600px){
+    .list {
+        width: 85%;
+        margin-top: 5%;
+     }
+     .ulList {
+         height: 41vh;
+     }
+     .headerList {
+         margin: 0 0 2.5%  0 ;
+     }
+     .headerList div p{
+         font-size: 3.05vw;
+     }
+     .headerList nav{
+         width: 68%;
+         gap: 3%;
+     }
+
 }
