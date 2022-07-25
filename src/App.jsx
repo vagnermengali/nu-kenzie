@@ -9,11 +9,7 @@ import './App.css';
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false)
-
-  const [listTransactions, setlistTransactions] = useState([
-    { description: "Salário recebido", type: "Entrada", value: 2500 },
-    { description: "Conta de luz", type: "Despesa", value: 150 }
-  ])
+  const [listTransactions, setlistTransactions] = useState([])
   function Login() {
     setIsLoggedIn(true)
  }
