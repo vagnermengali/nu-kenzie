@@ -2,6 +2,7 @@ import Interface from './components/Interface/';
 import Header from './components/Header';
 import Form from './components/Form';
 import List from './components/List';
+import Homepage from './components/Homepage';
 import { useState } from 'react';
 import './App.css';
 
