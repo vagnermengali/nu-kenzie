@@ -1,0 +1,82 @@
+.list {
+   width: 60%;
+}
+.ulList {
+    overflow-y: scroll;
+    
+    height: 67vh;
+}
+.ulList::-webkit-scrollbar {
+    width: 12px;       
+}
+.ulList::-webkit-scrollbar-track {
+    background: var(--white);     
+}
+.ulList::-webkit-scrollbar-thumb {
+    background-color: var(--grey-2);  
+    border-radius: 0.5vw;      
+    border: 1px solid var(--grey-2);  
+}
+.headerList {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 0 0 2.5%  0 ;
+}
+.headerList div{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: row;
+}
+.headerList div p{
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.05vw;
+    color: var(--grey-4);
+}
+.headerList nav{
+    width: 76%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    gap: 5%;
+}
+
+@media only screen and (max-width:950px){
+     .ulList::-webkit-scrollbar {
+         width: 0.1vw;       
+     }
+     .headerList div p{
+         font-size: 1.35vw;
+     }
+     .headerList nav{
+         width: 70%;
+         gap: 2.5%;
+     }
+
+}
+@media only screen and (max-width:600px){
+    .list {
+        width: 85%;
+        margin-top: 5%;
+     }
+     .ulList {
+         height: 41vh;
+     }
+     .headerList {
+         margin: 0 0 2.5%  0 ;
+     }
+     .headerList div p{
+         font-size: 3.05vw;
+     }
+     .headerList nav{
+         width: 68%;
+         gap: 3%;
+     }
+
+}
