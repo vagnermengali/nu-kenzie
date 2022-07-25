@@ -29,7 +29,17 @@
     text-align: center;
     color: var(--grey-4);
     cursor: pointer;
-} 
+}
+.buttonSelect:hover {
+    color: var(--white);
+    background: var(--grey-4);
+    border: 0.1vw solid var(--grey-4);
+}
+button:hover {
+    color: var(--white);
+    background: var(--grey-4);
+    border: 0.1vw solid var(--grey-4);
+}
  @media only screen and (max-width:950px){
       .buttonSelect {
          width: 7vw;
