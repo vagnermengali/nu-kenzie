@@ -5,7 +5,7 @@ import 'animate.css';
 function Interface({Login}) {
 
     return (
-        <div className="container">
+        <main className="container">
             <div className="content">
                 <div className="leftLogin">
                         <h1><span>Nu</span> Kenzie</h1>
@@ -18,7 +18,7 @@ function Interface({Login}) {
                 </div> 
                         
             </div>
-        </div>
+        </main>
         )
 }
 
