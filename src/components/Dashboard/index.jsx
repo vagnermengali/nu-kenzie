@@ -19,12 +19,12 @@ function Dashboard() {
                {isLoggedIn ? (
             <div>      
               <Header Logout={Logout}/>
-              <div className="containerMain"> 
+              <main className="containerMain"> 
                 <div className="main">
                   <Form listTransactions={listTransactions} setlistTransactions={setlistTransactions}/>
                   <List listTransactions={listTransactions} setlistTransactions={setlistTransactions}/>
                 </div>
-              </div>
+              </main>
             </div>
           ):( 
             <Interface Login={Login}/>
