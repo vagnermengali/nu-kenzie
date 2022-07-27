@@ -41,7 +41,13 @@ function Form({listTransactions, setlistTransactions}) {
                         type="number" 
                         placeholder="R$" 
                         value={listValue}
-                        onChange={(event) => setlistValue(event.target.value)}
+              
+                        onChange={(event) => {
+                            event.target.value = event.target.value.replace("-","")
+                                .replace("+","")
+                            setlistValue(event.target.value)
+                        }
+                        }
                         /> 
                     </div>
                     <div className="divContentTwo">
